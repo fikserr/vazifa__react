@@ -3,16 +3,17 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 import "./style/style.css";
 import "./style/style.css"
+import ContextProvider from "./context/Context";
 
 
 
 function App() {
   return (
-    <div>
+    <ContextProvider>
       < Header/>
       < Main/>
       < Footer/>
-    </div>
+    </ContextProvider>
   )
 }
 
